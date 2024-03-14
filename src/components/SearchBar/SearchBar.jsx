@@ -22,6 +22,7 @@ const SearchBar = ({ onSubmit }) => {
           secondary: "#FFFAEE",
         },
       });
+      return;
     }
 
     onSubmit(query);

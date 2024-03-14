@@ -1,14 +1,17 @@
 import ImageCard from "../ImageCard/ImageCard";
+import css from "./ImageGallery.module.css";
 
-const ImageGallery = ({ results }) => {
+const ImageGallery = ({ results, onModalOpen }) => {
   return (
-    <ul>
+    <ul className={css.list}>
       {results.map((result) => {
         return (
-          <li key={result.id}>
+          <li key={result.id} className={css.item}>
             <ImageCard
-              imageUrl={result.profile_image.large}
-              title={result.name}
+              imageUrlFull={result.urls.regular}
+              imageUrl={result.urls.small}
+              title={result.alt_description}
+              onModalOpen={onModalOpen}
             />
           </li>
         );
