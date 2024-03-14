@@ -52,17 +52,3 @@ button {
   cursor: pointer;
   padding: 0.1em 0.3em;
 }
-
-form {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-input {
-  padding: 8px;
-  border: none;
-  font-size: 22px;
-  outline: none;
-  width: 300px;
-}

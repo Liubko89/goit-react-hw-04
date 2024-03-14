@@ -27,3 +27,8 @@ img {
   object-fit: contain;
   overflow: hidden;
 }
+
+header {
+  max-width: 450px;
+  width: 100%;
+}
